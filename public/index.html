@@ -12,11 +12,21 @@
     <div class="centered-form">
         <div class="centered-form__box">
             <h1>Joing</h1>
+            <label>Display name</label>
+            <input type="text" name="username" placeholder="Name" required>
+            <label>Room</label>
+            <input type="text" name="room" placeholder="Create room" required>
+            <div class="dropdown">
+                <button class="dropbtn">Room Dropdown
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
             <form action="/chat.html">
-                <label>Display name</label>
-                <input type="text" name="username" placeholder="Display name" required>
-                <label>Room</label>
-                <input type="text" name="room" placeholder="Room" required>
                 <button>Join</button>
             </form>
         </div>
